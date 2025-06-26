@@ -1,0 +1,26 @@
+[
+  {
+    "id": 101,
+    "name": "Bekal",
+    "desc": "Hill station renowned for tea plantations and trekking trails",
+    "image": "https://images.unsplash.com/photo-1502877338535-766e1452684a"
+  },
+  {
+    "id": 102,
+    "name": "Mangalore",
+    "desc": "Beautiful coastal city with great beaches and temples",
+    "image": "https://images.unsplash.com/photo-1502877338535-766e1452684a"
+  },
+  {
+    "id": 103,
+    "name": "Udupi",
+    "desc": "Famous for temples, beaches, and vegetarian cuisine",
+    "image": "https://images.unsplash.com/photo-1470770903676-69b98201ea1c"
+  },
+  {
+    "id": 104,
+    "name": "Goa",
+    "desc": "Known for nightlife, Portuguese architecture and sandy shores",
+    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e"
+  }
+]

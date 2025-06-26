@@ -1,0 +1,83 @@
+/* card shell */
+.place-card {
+  width: 20vw;      
+  height:35vh;            /* tweak for your grid */
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+  font-family: "Inter", sans-serif; /* or your global font */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+/* image block */
+.places-img-wrap {
+  position: relative;
+  width: 100%;
+             /* keeps the shape */
+  overflow: hidden;
+}
+
+.place-hero {
+  width: 20vw;
+  height: 25vh;
+  object-fit: cover;
+}
+.badge {
+ position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 3vw;
+    height: 4vh;
+    background: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #000;
+    display: grid
+;
+    place-items: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+    border-bottom-left-radius: 1rem;
+}
+
+/* bottom text area */
+.content {
+  padding: 0.5rem 1rem;
+}
+
+.title {
+  margin: 0 0 4px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #000;
+  font-family: 'Montserrat';
+  text-align: left;
+}
+
+.desc {
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.2;
+  color: #555;
+  text-align:left;
+}
+
+
+/* horizontal row with even gaps */
+.places-strip {
+  display: flex;
+  gap: 24px;                 /* exact space between cards */
+  flex-wrap: nowrap;         /* keep in a single row */
+  overflow-x: auto;          /* scroll on very small screens */
+  padding: 0 8px;            /* little breathing room */
+  justify-content: space-around;
+}
+
+/* optional gradient backdrop like screenshot */
+.places-strip {
+  background: linear-gradient(90deg, #254b7b 0%, #4374a7 100%);
+  border-radius: 8px;
+  padding: 20px 24px;
+}

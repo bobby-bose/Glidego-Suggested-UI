@@ -1,0 +1,24 @@
+.tourism-note {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 14px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.20);  /* translucent over blue bar */
+  backdrop-filter: blur(4px);             /* frosted-glass vibe */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.12);
+  font-family: "Inter", sans-serif;
+}
+
+.note-icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.note-text {
+  font-size: 0.8rem;
+  color: #ffffff;
+  font-weight: 500;
+  line-height: 1.35;
+}

@@ -1,0 +1,96 @@
+/* ------------------------------------------------------------------
+   1.  Import Inter (same font used in the cards / headers)
+------------------------------------------------------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+/* ------------------------------------------------------------------
+   2.  CSS Reset / base rules
+------------------------------------------------------------------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 1.45;
+    /* soft neutral backdrop behind the blue bars */
+  color: #111;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+    background: linear-gradient(90deg, #254b7b 0%, #4374a7 100%);
+}
+
+img {
+  display: block;             /* eliminates the 4 px inline gap */
+  max-width: 100%;
+  height: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  margin: 0;
+}
+
+/* ------------------------------------------------------------------
+   3.  Helper container – optional
+------------------------------------------------------------------- */
+.app-wrapper {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 32px 24px;
+}
+
+/* ------------- OUTER WRAPPER (full-width bar) ------------------- */
+.dashboard {
+  display: flex;
+  gap: 24px;                /* space between 60 % and 40 % columns */
+  height: 60vh;            /* matches your spec */
+  background: linear-gradient(90deg, #254b7b 0%, #4374a7 100%);
+ 
+  padding: 24px;            /* inner breathing room */
+  box-sizing: border-box;
+  color:#f5f9fc;
+}
+
+/* ------------- LEFT 60 % COLUMN -------------------------------- */
+.left-col {
+  flex: 0 0 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;                /* vertical gap between the 50/50 regions */
+}
+
+/* top 50 %  – hotels ******************************************** */
+.left-top {
+  flex: 1;                  /* 50 % of column because .left-col is flex-col */
+  display: flex;
+  flex-direction: column;
+}
+
+/* bottom 50 % – distance bar ************************************ */
+.left-bottom {
+  flex: 1;
+  display: flex;
+  align-items: center;      /* vertically centre TotalDistance */
+}
+
+/* ------------- RIGHT 40 % COLUMN ------------------------------- */
+.right-col {
+  flex: 0 0 30%;
+  display: flex;
+  justify-content: flex-end;/* keep CabsGrid flush right */
+  align-items: flex-start;
+}
+
+/* allow Hotel / Cab strips to stretch fully inside their cells */
+.hotels-strip,
+.cabs-panel {
+  width: 100%;
+}

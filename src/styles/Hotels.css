@@ -1,0 +1,88 @@
+/* ===========================================================
+   Hotel card – matches your reference image
+   =========================================================== */
+.hotel-card {
+ 
+  background: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
+  display: flex;
+  flex-direction: column;
+  font-family: "Inter", sans-serif;
+  border: 1px solid #e9e9e9;
+}
+
+/* ---- top image ------------------------------------------- */
+.hotels-img-wrap {
+  position: relative;
+  width: 100%;
+           /* keeps a nice 4:3 photo box */
+  overflow: hidden;
+}
+
+.hotels-hero {
+     height: 20vh;
+    width: 15vw;
+  object-fit: cover;
+}
+.badge {
+ position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 3vw;
+    height: 4vh;
+    background: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #000;
+    display: grid
+;
+    place-items: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+    border-bottom-left-radius: 1rem;
+}
+
+/* ---- bottom “sub-card” ----------------------------------- */
+.content {
+  background: #ffffff;
+  padding: 10px 6px 12px;
+  text-align: center;
+  border-top: 1px solid #e9e9e9;   /* subtle divider line */
+}
+
+.name {
+  margin: 0;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #000;
+}
+
+/* tagline is hidden for this compact design.
+   Remove the rule if you want to show it.   */
+.tagline {
+  display: none;
+}
+
+/* ===========================================================
+   Horizontal strip wrapper (you already have this, kept here
+   so everything lives in one file)
+   =========================================================== */
+.hotels-strip {
+  display: flex;
+  gap: 24px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  background: linear-gradient(90deg, #254b7b 0%, #4374a7 100%);
+  border-radius: 8px;
+  padding: 20px 24px;
+}
+
+/* optional – slim thumb scrollbar (WebKit) */
+.hotels-strip::-webkit-scrollbar {
+  height: 6px;
+}
+.hotels-strip::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 4px;
+}

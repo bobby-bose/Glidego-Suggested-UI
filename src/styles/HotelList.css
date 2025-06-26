@@ -1,0 +1,28 @@
+/* ------------------------------------------
+   Hotels horizontal strip
+------------------------------------------- */
+.hotels-strip {
+  display: flex;
+  gap: 24px;              /* space between cards */
+  flex-wrap: nowrap;      /* keep in one row */
+  overflow-x: auto;       /* allow sideways scroll on small screens */
+  padding: 20px 24px;     /* inner breathing room */
+  background: linear-gradient(90deg, #254b7b 0%, #4374a7 100%);
+  border-radius: 8px;
+}
+
+/* optional – hide scrollbar track but keep usable thumb (WebKit) */
+.hotels-strip::-webkit-scrollbar {
+  height: 6px;
+}
+
+.hotels-strip::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 4px;
+}
+
+/* ensures images inside cards never overflow */
+.hotel-card img {
+  max-width: 100%;
+ 
+}

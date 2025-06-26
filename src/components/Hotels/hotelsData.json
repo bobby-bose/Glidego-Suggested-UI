@@ -1,0 +1,22 @@
+[
+  {
+    "id": 201,
+    "name": "Gokulam Park Hotel",
+    "img": "https://images.unsplash.com/photo-1611892440504-42a792e24d32"
+  },
+  {
+    "id": 202,
+    "name": "Grand Hotel",
+    "img": "https://images.unsplash.com/photo-1507679799987-c73779587ccf"
+  },
+  {
+    "id": 203,
+    "name": "Aura One Hotel",
+    "img": "https://images.unsplash.com/photo-1507679799987-c73779587ccf"
+  },
+  {
+    "id": 204,
+    "name": "The Blooms",
+    "img": "https://images.unsplash.com/photo-1611892440504-42a792e24d32"
+  }
+]

@@ -1,0 +1,71 @@
+.distance-box {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+
+  padding: 50px 24px;
+  border-radius: 8px;
+  width: fit-content;
+}
+.places-section-header{
+  color:white;
+  padding-top: 5vh;
+  padding-left: 24px;
+  font-size:2.5rem;
+}
+.hotels-section-header{
+  color:white;
+ 
+  padding-left: 24px;
+  font-size:2.5rem;
+}
+.section-title{
+  color:white;
+  padding-top: 3vh;
+  padding-left: 24px;
+  font-size:2.5rem;
+}
+/* left: KM */
+.km-part {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.label {
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  font-family: "Inter", sans-serif;
+}
+
+.value {
+  background: white;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #000;
+}
+
+/* right: note with icon */
+.note-bubble {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #e6f2f7;
+  border-radius: 12px;
+  padding: 6px 12px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
+.note-text {
+  font-size: 0.8rem;
+  color: #333;
+  font-weight: 500;
+}

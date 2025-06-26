@@ -1,0 +1,92 @@
+/* --- card shell (same DNA as place/hotel) --- */
+.cab-card {
+
+  border-radius: 8px;
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.10);
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+/* image */
+.cabs-img-wrap {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.cabs-hero {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.badge {
+ position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 3vw;
+    height: 4vh;
+    background: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #000;
+    display: grid
+;
+    place-items: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+    border-bottom-left-radius: 1rem;
+}
+
+/* label */
+.content {
+  padding:  6px 10px;
+  text-align: center;
+}
+
+.name {
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #000;
+}
+
+/* ------------------------------------------
+   Outer panel for cabs block
+------------------------------------------- */
+.cabs-panel {
+  background: linear-gradient(90deg, #254b7b 0%, #4374a7 100%);
+  padding: 20px 24px;
+  border-radius: 8px;
+  width: fit-content;       /* keeps the card group tight like in the screenshot */
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* ------------------------------------------
+   Title: "Cab by defund car"
+------------------------------------------- */
+.panel-title {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+/* ------------------------------------------
+   Grid: 2×2 cab cards
+------------------------------------------- */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 16px 20px;           /* row-gap and column-gap */
+}
+
+/* ensures card images stay sharp */
+.cab-card img {
+  max-width: 100%;
+  height: auto;
+}

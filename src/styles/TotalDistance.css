@@ -1,0 +1,57 @@
+.distance-box {
+      display: flex;
+    align-items: center;
+    gap: 32px;
+    background: linear-gradient(90deg, #254b7b 0%, #4374a7 100%);
+    padding: 20px 24px;
+    border-radius: 8px;
+    /* width: fit-content; */
+    width: 68vw;
+    justify-content: space-around;
+}
+
+
+/* left: KM */
+.km-part {
+  display: flex;
+  align-items: center;
+  gap: 4vw;
+}
+
+.label {
+  color: white;
+  font-weight: 600;
+  font-size: 2rem;
+  font-family: "Inter", sans-serif;
+}
+
+.value {
+  background: white;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #000;
+}
+
+/* right: note with icon */
+.note-bubble {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #e6f2f7;
+  border-radius: 12px;
+  padding: 6px 12px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
+.note-text {
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: 500;
+}
